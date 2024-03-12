@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>merhaba dünya</title>
+	<style type="text/css">
+	    html, body {
+	        margin: 0;
+	        padding: 0;
+	    }
+
+		@keyframes shake {
+			0% {transform-origin: center;transform: rotate(0deg);}
+			25% {transform-origin: center;transform: rotate(10deg);}
+			50% {transform-origin: center;transform: rotate(0deg);}
+			75% {transform-origin: center;transform: rotate(-10deg);}
+			100% {transform-origin: center;transform: rotate(0deg);}
+		}
+		
+		@keyframes renk {
+			 0% {background: linear-gradient(135deg, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+			25% {background: linear-gradient(135deg, cyan, red);  -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+			50% {background: linear-gradient(135deg, purple, cyan); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+			75% {background: linear-gradient(135deg, blue, purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+		   100% {background: linear-gradient(135deg, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+		}
+
+		#anime1 {
+			animation: shake 4s infinite;
+		}
+		
+		#anime2 {
+		    animation: renk .5s infinite;
+		}
+
+		body {
+			min-height: 700px;
+			background-color: #1e1e1e;
+		}
+
+		.main {
+			margin: 5px;
+			position: fixed;
+			z-index: 1;
+		}
+
+		.main:hover {
+			cursor: pointer;
+		}
+
+		.frame {
+			border: 2px solid gray;
+			padding: 2px 5px 2px 5px;
+		}
+
+		.cubuk {
+			background-color: black;
+			border-radius: 15px;
+			width: 30px;
+			height: 5px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			transition: all .4s;
+		}
+		
+		a {
+		    display: block;
+		    height: 70px;
+		}
+		
+		.button {
+			font-family: 'Courier New', monospace;
+			position: absolute;
+			color: white;
+			background-color: rgb(50, 50, 50, 0.4);
+			border-radius: 5px;
+			width: 250px;
+			height: 50px;
+			text-align: center;
+			margin-bottom: 50px;
+			cursor: pointer;
+		}
+
+		.menu {
+			padding: 70px 10px;
+			position: fixed;
+			transform: scaleX(0);
+			background-color: black;
+			width: 250px;
+			height: 100vh;
+			transform-origin: left;
+			transition: all .4s;
+		}
+
+		.clickedCubuk {
+			background-color: white;
+			border-radius: 15px;
+			width: 30px;
+			height: 5px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		.clickedMenu {
+			padding: 80px 80px;
+			position: fixed;
+			transform: scaleX(1);
+			background-color: black;
+			width: 250px;
+			height: 100vh;
+			transform-origin: left;
+			transition: all .4s;
+		}
+	</style>
+	<script type="text/javascript">
+		var cubuklar = ["cubuk1", "cubuk2", "cubuk3"];
+
+		function tikla() {
+
+			for (var i = 0; i < cubuklar.length; i++) {
+				document.getElementById(cubuklar[i]).classList.toggle("cubuk");
+				document.getElementById(cubuklar[i]).classList.toggle("clickedCubuk");
+			}
+
+			document.getElementById("menuoh").classList.toggle("menu");
+			document.getElementById("menuoh").classList.toggle("clickedMenu");
+		}
+	</script>
+</head>
+<body>
+    <div onclick="tikla()" class="main">
+	<div id="frameoh" class="frame">
+		<div id="cubuk1" class="cubuk"></div>
+		<div id="cubuk2" class="cubuk"></div>
+		<div id="cubuk3" class="cubuk"></div>
+	</div>
+</div>
+<div id="menuoh" class="menu">
+    <a href="homeworks/calisma.html">
+        <button class="button">sinav ödevi</button>
+    </a>
+    <a href="homeworks/listandtable.html">
+	    <button class="button">table ve liste ödevi</button>
+    </a>
+    <a href="homeworks/main.html">
+	    <button class="button">website ödevi</button>
+    </a>
+    <a href="homeworks/odevim.html">
+	    <button class="button">konser sitesi</button>
+    </a>
+</div>
+<br>
+<h1 id="anime1" style="text-align:center;margin:0;">Fatih Çelik</h1>
+<br>
+<h2 id="anime2" style="text-align:center;">Sayfama Hoşgeldiniz.</h2>
+<a href="arno.html" style="position:fixed;left:98%;top:96vh;">
+    <img src="images/arno-breker.png" style="width: 20px;height:15px;">
+</a>
+</body>
+</html>
