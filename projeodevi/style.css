@@ -1,0 +1,210 @@
+body {
+    margin: 74px 0 0 0;
+    padding: 0;
+  }
+
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-color {
+      background-color: #ab6222;
+  }
+
+  .butonlar {
+    text-align: center;
+    height: 30px;
+    width: 110px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    bottom: 4px;
+    padding-left: 4px;
+    padding-top: 4px;
+    transition: all .3s;
+    border: .1px solid white;
+  }
+
+  .ozelbutonlar {
+    text-align: center;
+    height: 30px;
+    width: 110px;
+    background-color: black;
+    border-radius: 30px;
+    position: relative;
+    bottom: 4px;
+    padding-left: 4px;
+    padding-top: 4px;
+    transition: all .3s;
+    border: .1px solid black;
+  }
+
+  .butonlar:hover {
+      color: white;
+      background-color: #ab6222;
+  }
+
+  .ozelbutonlar:hover {
+      background-color: #ab6222;
+  }
+
+  #yandiv {
+    position: fixed;
+    background-color: rgb(225, 144, 98);
+    width: 600px;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .mainforms {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .sepetmain {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .box {
+    padding: 15px;
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    background-color: black;
+    color: blue;
+  }
+
+  .sepet {
+    padding: 15px;
+    width: 700px;
+    height: 550px;
+    border-radius: 30px;
+    background-color: black;
+    color: blue;
+  }
+
+  .col-md-6 {
+    padding: 0;
+  }
+  
+
+  .divider {
+    position: relative;
+    right: 20px;
+    height: 1px;  
+    width: 600px;
+    background-color: black;
+  }
+
+  .toggle-mode {
+    position: relative;
+    top: 30px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .lightcerceve {
+    background-color: skyblue;
+    border: 3px solid gray;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    transition: .5s all;
+  }
+
+  .lightball {
+    top: 2.5px;
+    border: 2px solid black;
+    position: absolute;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    transition: .5s all;
+  }
+
+  .lightball::after {
+    background-image: url(images/sun.png);
+    background-size: 25px 25px;
+    position: relative;
+    bottom: 6px;
+    right: 6.5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    content:"";
+    -webkit-transition: background-image .5s;
+    transition: background-image .5s;
+  }
+
+  .darkball {
+    top: 2.5px;
+    border: 2px solid black;
+    position: absolute;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    transform: translateX(30px);
+    transition: all .5s;
+  }
+
+  .darkball::after {
+    background-image: url(images/moon.png);
+    background-size: 25px 25px;
+    position: relative;
+    bottom: 6px;
+    right: 6.5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 23px;
+    content:"";
+    -webkit-transition: background-image .5s;
+    transition: background-image .5s;
+  }
+
+  .darkcerceve {
+    background-color: black;
+    border: 3px solid gray;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    transition: .5s all;
+  }
+
+  .light {
+   transition: .5s all;
+  }
+  
+
+  .dark {
+    background-color: black;
+    color: white;
+    transition: .5s all;
+  }
+
+  .mt-6 {
+    margin-top: 3.5rem!important;
+  }
+
+  .mt-7 {
+    margin-top: 4rem!important;
+  }
+
+  .mt-8 {
+    margin-top: 4.5rem!important;
+  }
+
+  .mt-9 {
+    margin-top: 5rem!important;
+  }
+
+  .mt-10 {
+    margin-top: 6rem!important;
+  }
